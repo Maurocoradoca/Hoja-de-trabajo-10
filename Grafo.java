@@ -31,4 +31,20 @@ public class Grafo {
     public int getNumNodos() { return numNodos; }
     public String getNombreCiudad(int indice) { return indiceACiudad.get(indice); }
     public Integer getIndiceCiudad(String ciudad) { return ciudadAIndice.get(ciudad); }
+
+    public void agregarRuta(String origen, String destino, double distancia) {
+        agregarCiudad(origen);
+        agregarCiudad(destino);
+        int i = ciudadAIndice.get(origen);
+        int j = ciudadAIndice.get(destino);
+        matrizAdyacencia[i][j] = distancia;
+    }
+
+    public void eliminarRuta(String origen, String destino) {
+        if (ciudadAIndice.containsKey(origen) && ciudadAIndice.containsKey(destino)) {
+            int i = ciudadAIndice.get(origen);
+            int j = ciudadAIndice.get(destino);
+            matrizAdyacencia[i][j] = INF; // Infinito representa no hay paso
+        }
+    }
 }
