@@ -1,0 +1,13 @@
+Mixco Antigua 30
+Antigua Escuintla 25
+Escuintla Santa_Lucia 15
+Guatemala Mixco 15
+Guatemala Villa_Nueva 20
+Villa_Nueva Amatitlan 10
+Amatitlan Escuintla 30
+Antigua Chimaltenango 20
+Chimaltenango Tecpan 35
+Santa_Lucia Mazatenango 60
+Mazatenango Retalhuleu 30
+Retalhuleu Quetzaltenango 45
+Tecpan Quetzaltenango 80
